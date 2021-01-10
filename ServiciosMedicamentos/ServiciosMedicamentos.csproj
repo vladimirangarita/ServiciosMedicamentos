@@ -83,6 +83,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\FormaFarmaceuticaCLS.cs" />
     <Compile Include="Clases\MedicamentoCLS.cs" />
     <Compile Include="Models\BDMedico.Context.cs">
       <AutoGen>True</AutoGen>
