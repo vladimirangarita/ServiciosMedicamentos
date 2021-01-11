@@ -12,9 +12,9 @@ namespace ServiciosMedicamentos
 {
     // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de clase "Service1" en el código, en svc y en el archivo de configuración.
     // NOTE: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione Service1.svc o Service1.svc.cs en el Explorador de soluciones e inicie la depuración.
-    public class Service1 : IService1
+    public class Medicamentos : IMedicamentos
     {
-        int IService1.EliminarMedicamento(int iidMedicamento)
+        int IMedicamentos.EliminarMedicamento(int iidMedicamento)
         {
             //throw new NotImplementedException();
             int rpta = 0;
@@ -40,7 +40,7 @@ namespace ServiciosMedicamentos
             }
         }
 
-        List<FormaFarmaceuticaCLS> IService1.ListaFormaFarmaceutica()
+        List<FormaFarmaceuticaCLS> IMedicamentos.ListaFormaFarmaceutica()
         {
             //throw new NotImplementedException();
             List<FormaFarmaceuticaCLS> ListaFormaFarmaceutica =
@@ -66,7 +66,7 @@ namespace ServiciosMedicamentos
             return ListaFormaFarmaceutica;
         }
 
-        List<MedicamentoCLS> IService1.ListarMedicamentos()
+        List<MedicamentoCLS> IMedicamentos.ListarMedicamentos()
         {
             //throw new NotImplementedException();
             List<MedicamentoCLS> ListaMedicamento = new List<MedicamentoCLS>();
@@ -100,7 +100,7 @@ namespace ServiciosMedicamentos
 
         }
 
-        MedicamentoCLS IService1.RecuperarMedicamento(int iidMedicamento)
+        MedicamentoCLS IMedicamentos.RecuperarMedicamento(int iidMedicamento)
         {
             //throw new NotImplementedException();
             MedicamentoCLS oMedicamentoCLS = new MedicamentoCLS();
@@ -127,7 +127,7 @@ namespace ServiciosMedicamentos
             return oMedicamentoCLS;
         }
 
-        int IService1.RegistraryActualizarMedicamento(MedicamentoCLS oMedicamentoCLS)
+        int IMedicamentos.RegistraryActualizarMedicamento(MedicamentoCLS oMedicamentoCLS)
         {
             //throw new NotImplementedException();
             int rpta = 0;
