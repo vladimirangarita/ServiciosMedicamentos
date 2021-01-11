@@ -69,7 +69,7 @@ namespace ServiciosMedicamentos
         List<MedicamentoCLS> IService1.ListarMedicamentos()
         {
             //throw new NotImplementedException();
-            List<MedicamentoCLS> ListaMedicamento = new List<MedicamentoCLS>;
+            List<MedicamentoCLS> ListaMedicamento = new List<MedicamentoCLS>();
             try
             {
                 using (var bd = new MedicoEntities())
@@ -96,6 +96,7 @@ namespace ServiciosMedicamentos
 
                 ListaMedicamento = null;
             }
+            return ListaMedicamento;
 
         }
 
