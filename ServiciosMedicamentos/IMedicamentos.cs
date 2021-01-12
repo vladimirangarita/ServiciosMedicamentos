@@ -17,18 +17,19 @@ namespace ServiciosMedicamentos
         List<MedicamentoCLS> ListarMedicamentos();
 
         //Lista forma farmaceutica
+        [OperationContract]
         List<FormaFarmaceuticaCLS> ListaFormaFarmaceutica();
 
         //recuperar Medicamento
-
+        [OperationContract]
         MedicamentoCLS RecuperarMedicamento(int iidMedicamento);
 
         //Agregar y editar Medicamento
-
+        [OperationContract]
         int  RegistraryActualizarMedicamento(MedicamentoCLS oMedicamentoCLS);
 
         //Eliminar medicamento
-
+        [OperationContract]
         int EliminarMedicamento(int iidMedicamento);
 
         // TODO: agregue aquí sus operaciones de servicio
