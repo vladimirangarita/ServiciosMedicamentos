@@ -135,7 +135,7 @@ namespace ServiciosMedicamentos
             {
                 using (var bd=new MedicoEntities())
                 {
-                    if (oMedicamentoCLS.IidFormaFarmaceutica==0)
+                    if (oMedicamentoCLS.IidMedicamento==0)
                     {
                         Medicamento oMedicamento = new Medicamento();
                         oMedicamento.IIDMEDICAMENTO = oMedicamentoCLS.IidMedicamento;
